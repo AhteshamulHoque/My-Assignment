@@ -439,7 +439,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 
-.features-bento-grid {
+.features-special-grid {
     display: grid;
  
     grid-template-columns: repeat(3, 1fr);
@@ -500,7 +500,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
         padding: 3rem 1.25rem;
     }
 
-    .features-bento-grid {
+    .features-special-grid {
         grid-template-columns: 1fr; 
     }
 
@@ -521,5 +521,104 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 
     .feature-name {
         font-size: 1.25rem;
+    }
+}
+.video-episode {
+    background-color: #0a0118; 
+    color: #ffffff;
+    padding: 5rem 10%; 
+    max-width: 100rem; 
+    margin: 0 auto;
+}
+
+.section-main-title {
+    text-align: center;
+    font-size: 2.5rem; 
+    font-weight: 800;
+    margin-bottom: 3.75rem; 
+}
+
+.episodes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; 
+}
+.episode-card {
+    background: rgba(255, 255, 255, 0.03); 
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem; 
+    overflow: hidden;
+}
+
+.video-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3.5rem;
+}
+
+.play-icon {
+    width: 100%;
+    height: auto;
+}
+
+.episode-body {
+    padding: 2.25rem; 
+}
+
+.episode-name {
+    font-size: 1.375rem; 
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.episode-details {
+    font-size: 0.9375rem; 
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+.duration-tag {
+    color: #00ff84; 
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 62rem) {
+    .episodes-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 42.1875rem) {
+    .video-episode {
+        padding: 3rem 1.25rem;
+    }
+
+    .episodes-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-main-title {
+        font-size: 1.875rem;
+    }
+
+    .episode-body {
+        padding: 1.5rem;
     }
 }
