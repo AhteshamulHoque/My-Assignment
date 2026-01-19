@@ -138,7 +138,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     padding: 80px 20px;
     color: white;
     background-color: rgba(65, 37, 103, 1);
-    min-height: 400px;
+  
 }
 
 .content {
@@ -267,7 +267,8 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
         padding: 4rem 1rem; 
         background-position: center center;
         margin-bottom: 0;
-        
+        background-size: cover; 
+        background-position: center;
     }
 
     .image-container {
@@ -795,6 +796,8 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
         padding: 4rem 1rem 2rem 1rem;
         justify-content: center;
         align-items: center;
+        background-size: cover;
+        background-position: center center;
     }
 
     .tech-text {
