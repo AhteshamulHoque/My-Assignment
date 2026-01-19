@@ -138,6 +138,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     padding: 80px 20px;
     color: white;
     background-color: rgba(65, 37, 103, 1);
+    min-height: 400px;
 }
 
 .content {
@@ -145,6 +146,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     flex-direction: column;
     align-items: center;
     max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -194,7 +196,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     border-radius: 1.25rem; 
     box-shadow: 0 0 0.9375rem rgba(0, 255, 132, 0.6);
     transform-origin: -6.875rem; 
-    animation: rotateBadge 8s linear infinite;
+    animation: rotateBadge 7s linear infinite;
 }
 
 @keyframes rotateBadge {
@@ -262,7 +264,10 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 
 @media (max-width: 36rem) { 
     .banner {
-        padding: 2.5rem 0.9375rem; 
+        padding: 4rem 1rem; 
+        background-position: center center;
+        margin-bottom: 0;
+        
     }
 
     .image-container {
@@ -309,7 +314,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     padding: 5rem 10%; 
     text-align: center;
     max-width: 100rem;
-     margin: 0 auto;   
+    margin: 0 auto;   
     width: 100%;
 }
 
@@ -623,6 +628,8 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     color: #ffffff;
     max-width: 100rem;
     margin: -72px auto;
+     margin-bottom: -0.25rem; 
+    
 }
 
 
@@ -720,16 +727,17 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 .main-footer {
     position: relative;
-    background-image: url("../B13-A02-TechWave/assets/footer-bg.png");
+    background-image: url('../B13-A02-TechWave/assets/footer-bg.png');
     background-color: #0a0118; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
     text-align: center;
-     max-width: 100rem;
-     margin: 0 auto;
+    max-width: 100rem;
+    margin: 0 auto;
     padding: 6rem 0 3rem 0; 
+    
 }
 
 .tech-text {
@@ -785,6 +793,8 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 @media (max-width: 42.1875rem) {
     .main-footer {
         padding: 4rem 1rem 2rem 1rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .tech-text {
