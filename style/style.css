@@ -120,8 +120,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        background-color: #fff;
+        width: 650px;
         flex-direction: column;
         text-align: center;
         padding: 20px 0;
@@ -310,4 +309,217 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
         white-space: nowrap; 
     }
 }
+.about-podcast {
+    background-color: #0a0118; 
+    color: #ffffff;
+    padding: 5rem 10%; 
+    text-align: center;
+    max-width: 1600px; 
+    margin: 0 auto;   
+    width: 100%;
+}
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.875rem; 
+}
+
+.about-description {
+    max-width: 50rem; 
+    margin: 0 auto 3.125rem auto; 
+}
+
+.description-text, .description-sub-text {
+    font-size: 1.125rem; 
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 4.375rem 0; 
+}
+
+
+.stats-grid {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stat-item {
+    flex: 1;
+    min-width: 12.5rem; 
+}
+
+.stat-number {
+    font-size: 3rem; 
+    font-weight: 900;
+    color: #00ff84; 
+    margin-bottom: 0.625rem; 
+}
+
+.star-icon {
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-left: 0.3125rem;
+}
+
+.stat-label {
+    font-size: 0.875rem; 
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.0625rem; 
+    text-transform: uppercase;
+}
+
+@media (max-width: 62rem) { 
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 3rem 1.5rem; 
+    }
+
+    .about-podcast {
+        padding: 4rem 8%;
+    }
+}
+@media (max-width: 42.1875rem) { 
+    .about-podcast {
+        padding: 3rem 5%; 
+    }
+
+    .about-title {
+        font-size: 1.875rem; 
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2.5rem 1rem;
+    }
+
+    .stat-number {
+        font-size: 2.25rem; 
+    }
+
+    .section-divider {
+        margin: 2.5rem 0;
+    }
+}
+@media (max-width: 25rem) { 
+    .stats-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.features-section {
+    background-color: #0a0118; 
+    color: #ffffff;
+    padding: 5rem 10%; 
+    max-width: 100rem; 
+    margin: 0 auto;
+}
+
+.features-title {
+    text-align: center;
+    font-size: 2.5rem; 
+    font-weight: 800;
+    margin-bottom: 3.75rem; 
+}
+
+
+.features-bento-grid {
+    display: grid;
+ 
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(10rem, auto);
+    gap: 1.5rem; 
+}
+
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.03); 
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem; 
+    padding: 2.25rem; 
+}
+
+
+.feature-icon {
+    width: 3rem; 
+    margin-bottom: 1.5rem;
+}
+
+.feature-name {
+    font-size: 1.375rem; 
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.feature-text {
+    font-size: 0.9375rem; 
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+.card-tall {
+    grid-row: span 2;
+}
+.card-wide {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-wide .feature-icon {
+    margin-bottom: 0; 
+}
+
+.card-large {
+    grid-column: span 2;
+}
+
+
+.card-square {
+    grid-column: span 1;
+}
+@media (max-width: 42.1875rem) {
+    .features-section {
+        padding: 3rem 1.25rem;
+    }
+
+    .features-bento-grid {
+        grid-template-columns: 1fr; 
+    }
+
+
+    .card-tall, .card-wide, .card-large, .card-square {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .card-wide {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .card-wide .feature-icon {
+        margin-bottom: 1rem;
+    }
+
+    .feature-name {
+        font-size: 1.25rem;
+    }
+}
