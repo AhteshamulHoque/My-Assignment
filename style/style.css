@@ -727,17 +727,17 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     }
 }
 .main-footer {
-    position: relative;
+  
     background-image: url('../B13-A02-TechWave/assets/footer-bg.png');
     background-color: #0a0118; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: #ffffff;
     text-align: center;
     max-width: 100rem;
     margin: 0 auto;
     padding: 6rem 0 3rem 0; 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
     
 }
 
@@ -793,15 +793,19 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 
 @media (max-width: 42.1875rem) {
     .main-footer {
+       
         padding: 4rem 1rem 2rem 1rem;
         justify-content: center;
         align-items: center;
-        background-size: cover;
-        background-position: center center;
+        background-size: contain !important; 
+        background-repeat: no-repeat !important; 
+        background-position: center center !important;
+        background-size: 100% 100% !important;
+        margin: auto;
     }
 
     .tech-text {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .footer-social-links {
